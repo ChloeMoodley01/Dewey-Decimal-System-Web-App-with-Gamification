@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="FindCallNumbers\quizzz.png" />
+    <None Remove="Home Screen Picture %281%29.png" />
+    <None Remove="Home Screen Picture.png" />
+    <None Remove="Replace\Generate_Arrow.png" />
+    <None Remove="Replace\Generate_Icon.png" />
+    <None Remove="Replace\Generate_Picture.png" />
+    <None Remove="Replace\Sort_Picture.png" />
+    <None Remove="Sign_In\Dash_FindNumbers.png" />
+    <None Remove="Sign_In\Dash_Icon.png" />
+    <None Remove="Sign_In\Dash_Identify.png" />
+    <None Remove="Sign_In\Dash_Replace.png" />
+    <None Remove="Sign_In\Login Picture.png" />
+    <None Remove="Sign_In\Login.png" />
+    <None Remove="Sign_In\Register Picture.png" />
+    <None Remove="Sign_In\Register.png" />
+    <None Remove="Status\Bronze.png" />
+    <None Remove="Status\Gold.png" />
+    <None Remove="Status\Leadership_Picture.png" />
+    <None Remove="Status\Platinum.png" />
+    <None Remove="Status\Points_Picture.png" />
+    <None Remove="Status\Sliver.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="FindCallNumbers\quizzz.png" />
+    <Resource Include="Images\Home Screen Picture %281%29.png" />
+    <Resource Include="Images\Login.png" />
+    <Resource Include="Images\Login Picture.png" />
+    <Resource Include="Images\Register.png" />
+    <Resource Include="Images\Register Picture.png" />
+    <Resource Include="Images\Dash_Replace.png" />
+    <Resource Include="Images\Dash_FindNumbers.png" />
+    <Resource Include="Images\Dash_Identify.png" />
+    <Resource Include="Images\Dash_Icon.png" />
+    <Resource Include="Images\Generate_Icon.png" />
+    <Resource Include="Images\Generate_Arrow.png" />
+    <Resource Include="Images\Generate_Picture.png" />
+    <Resource Include="Images\Sort_Picture.png" />
+    <Resource Include="Images\Points_Picture.png" />
+    <Resource Include="Images\Bronze.png" />
+    <Resource Include="Images\Gold.png" />
+    <Resource Include="Images\Platinum.png" />
+    <Resource Include="Images\Sliver.png" />
+    <Resource Include="Images\Leadership_Picture.png" />
+  </ItemGroup>
+
+</Project>

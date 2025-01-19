@@ -1,0 +1,142 @@
+﻿<Window x:Class="PROG7312_POE_ST10119385_ChloeMoodley.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PROG7312_POE_ST10119385_ChloeMoodley"
+        mc:Ignorable="d"
+        Title="The Dewey Decimal Classification System" Height="772" Width="1106" ResizeMode="NoResize" WindowState="Maximized">
+    <Grid Margin="10">
+
+        <!--columns to spilt page-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--rows to spilt page-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--color for heading (Microsoft, 2021)-->
+        <Rectangle Grid.RowSpan="6" 
+                   Grid.ColumnSpan="4">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#E09F3E" Offset="0.0" />
+                    <GradientStop Color="#335C67" Offset="0.25" />
+                    <GradientStop Color="#9E2A2B" Offset="0.75" />
+                    <GradientStop Color="#540B0E" Offset="1.0" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+     
+
+        <TextBlock Text="DEWEY" 
+                   Grid.Row="1"
+                   Grid.ColumnSpan="2" 
+                   Foreground="#FFF3B0" 
+                   FontFamily="Bahnschrift" 
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Left" 
+                   FontSize="70"
+                   Margin="150 0 0 0">
+        </TextBlock>
+
+        <TextBlock Text="DECIMAL" 
+                   Grid.Row="2"
+                   Grid.ColumnSpan="3" 
+                   Foreground="#FFF3B0" 
+                   FontFamily="Bahnschrift" 
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Left" 
+                   FontSize="70"
+                   Margin="250 0 0 50">
+        </TextBlock>
+
+        <TextBlock Text="CLASSIFICATION" 
+                   Grid.Row="3"
+                   Grid.ColumnSpan="3"  
+                   Foreground="#FFF3B0" 
+                   FontFamily="Bahnschrift" 
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Left" 
+                   FontSize="70"
+                   Margin="150 0 0 50">
+        </TextBlock>
+
+        <TextBlock Text="SYSTEM" 
+                   Grid.Row="4"
+                   Grid.ColumnSpan="3" 
+                   Foreground="#FFF3B0" 
+                   FontFamily="Bahnschrift" 
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Left" 
+                   FontSize="70"
+                   Margin="250 0 0 50">
+        </TextBlock>
+
+        <!--button-->
+        <Button Content="LET'S GET STARTED!" 
+                x:Name="REGISTER" 
+                Background="#335C67" 
+                BorderBrush="#335C67"
+                BorderThickness="2"
+                Foreground="#E09F3E" 
+                FontFamily="Arial" 
+                Height="30"
+                Width="250" 
+                Margin="0 200 0 0" 
+                FontSize="20" 
+                Grid.Row="3"
+                Grid.RowSpan="6"
+                Grid.ColumnSpan="2"
+                Click="REGISTER_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <!--button--><!--
+        <Button Content="LOGIN" 
+                x:Name="LOGIN" 
+                Background="#335C67" 
+                BorderBrush="#335C67"
+                BorderThickness="2"
+                Foreground="#E09F3E" 
+                FontFamily="Arial" 
+                Height="30"
+                Width="200" 
+                Margin="0 70 0 0" 
+                FontSize="20" 
+                Grid.Row="4"
+                Grid.RowSpan="6"
+                Grid.ColumnSpan="3"
+                Click="LOGIN_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>-->
+        
+        <Image Grid.Column="2"
+               Grid.ColumnSpan="3"
+               Grid.Row="1"
+               Grid.RowSpan="4"
+               Margin="0 0 20 0"
+            Source="Images/Home Screen Picture (1).png" />
+        
+    </Grid>
+</Window>
